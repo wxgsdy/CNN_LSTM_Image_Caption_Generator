@@ -20,5 +20,5 @@ produces the caption for imgname.jpg(test image).
 
 ### Other files
 1.`model.py` defines the `Model` class that contains the CNN-LSTM architecture.
-2.`evaluate_captions.py` generates aggregated JSON files that can then be used for hyperparameter tuning.  
+2.`evaluate_captions.py` generates aggregated JSON files that can then be used for hyperparameter tuning.     
 3.`image_feature_cnn.py` loads up the GoogleNet batch normalization CNN model and turns images into 1024-demension vectors.
