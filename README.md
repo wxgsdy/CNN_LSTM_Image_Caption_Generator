@@ -15,11 +15,10 @@ satisfying result.
 
     ./download.sh 
 
-2.Run  'caption_image.py' to load and use the saved model.    
-
-We have included a demo pizza image at images/pizza.jpg to sanity 
-check your installation. Running `python caption_image.py -i images/pizza.jpg` 
-produces the caption "a pizza with cheese and cheese on a table". It's not perfect, but still pretty cool!
+2.Run 'caption_image.py' to load and use the saved model and use command  `python caption_image.py -i images/imgname.jpg` 
+produces the caption for imgname.jpg(test image).
 
 ### Other files
-`model.py` contains the `Model` class that contains the CNN-LSTM architecture (using Tensorflow's dynamic_rnn API) and various helper functions for generating captions. `evaluate_captions.py` is a helper script to generate aggregated JSON files that can then be used for hyperparameter tuning. `image_feature_cnn.py` contains the helper functions we use to load up the GoogleNet batch normalization CNN model and turn images into 1024 x 1 vectors.
+1.`model.py` defines the `Model` class that contains the CNN-LSTM architecture.
+2.`evaluate_captions.py` generates aggregated JSON files that can then be used for hyperparameter tuning.  
+3.`image_feature_cnn.py` loads up the GoogleNet batch normalization CNN model and turns images into 1024-demension vectors.
